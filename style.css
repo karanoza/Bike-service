@@ -1,0 +1,41 @@
+.container {
+  width: 1024px;
+  background-color: aquamarine;
+  min-height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: rgb(41, 96, 36);
+  min-height: 100px;
+}
+
+main {
+  background-color: rgb(49, 139, 41);
+  min-height: 300px;
+}
+
+.cards {
+  background-color: rgb(47, 198, 33);
+  min-height: 300px;
+  display: flex;
+}
+
+.card1 {
+  background-color: coral;
+  min-height: 300px;
+  width: 33.3%;
+}
+
+.card2 {
+  background-color: rgb(70, 20, 2);
+  min-height: 300px;
+  width: 33.3%;
+}
+
+.card3 {
+  background-color: rgb(238, 159, 131);
+  min-height: 300px;
+  width: 33.3%;
+}
