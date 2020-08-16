@@ -12,6 +12,11 @@ body {
   font-size: 1.125 rem;
   color: white;
 }
+
+a {
+  color: white;
+  text-decoration: none;
+}
 .container {
   width: 1024px;
 
@@ -47,7 +52,7 @@ main {
   background-position: bottom;
   min-height: 250px;
   width: 30%;
-  box-shadow: 4px 6px 8px black;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.658);
 }
 .card2 {
   background-image: url(images/image-background-card2.jpg);
@@ -55,7 +60,7 @@ main {
   background-position: bottom;
   min-height: 250px;
   width: 30%;
-  box-shadow: 4px 6px 8px black;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.658);
 }
 
 .card3 {
@@ -64,7 +69,7 @@ main {
   background-position: bottom;
   min-height: 250px;
   width: 30%;
-  box-shadow: 4px 6px 8px black;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.658);
 }
 
 .card1,
@@ -81,12 +86,14 @@ main {
 
 .herobox2 {
   flex: 1;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.658);
 }
 
 h1 {
   font-size: 3.25rem;
   font-family: "Playfair Display", serif;
   margin-bottom: 1rem;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.541);
 }
 
 h2 {
@@ -110,7 +117,16 @@ p {
   padding-top: 20px;
 }
 
-.cards a {
-  color: white;
-  text-decoration: none;
+.bookbtn {
+  background-color: white;
+  color: #fa4083;
+  font-family: "Playfair Display", serif;
+  padding: 11px 25px 11px 25px;
+  border-radius: 10px 0px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.336);
+}
+
+a.bookbtn {
+  display: inline-block;
+  margin-top: 20px;
 }
