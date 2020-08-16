@@ -38,6 +38,7 @@ main {
 .cards {
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
 
 .card1 {
@@ -46,6 +47,7 @@ main {
   background-position: bottom;
   min-height: 250px;
   width: 30%;
+  box-shadow: 4px 6px 8px black;
 }
 .card2 {
   background-image: url(images/image-background-card2.jpg);
@@ -53,6 +55,7 @@ main {
   background-position: bottom;
   min-height: 250px;
   width: 30%;
+  box-shadow: 4px 6px 8px black;
 }
 
 .card3 {
@@ -61,6 +64,14 @@ main {
   background-position: bottom;
   min-height: 250px;
   width: 30%;
+  box-shadow: 4px 6px 8px black;
+}
+
+.card1,
+.card2,
+.card3 {
+  padding: 30px 30px 20px 30px;
+  box-sizing: border-box;
 }
 
 .herobox1 {
@@ -78,7 +89,28 @@ h1 {
   margin-bottom: 1rem;
 }
 
+h2 {
+  font-size: 1.75rem;
+  font-family: "Playfair Display", serif;
+}
 p {
   line-height: 1.75rem;
   margin-bottom: 0.5rem;
+}
+
+.cards p {
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  margin-top: 10px;
+}
+
+.cards i {
+  font-size: 100px;
+
+  padding-top: 20px;
+}
+
+.cards a {
+  color: white;
+  text-decoration: none;
 }
