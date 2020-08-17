@@ -3,9 +3,11 @@ h1 {
   font-family: "Playfair Display", serif;
 }
 
-html {
+/* html {
   height: 100%;
-}
+} */
+
+/* linear-gradient(#fc5e55, #fa4083); */
 body {
   background-image: linear-gradient(#fc5e55, #fa4083);
   font-family: "Playfair Display", serif;
@@ -32,6 +34,7 @@ header {
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  border-bottom: 1px solid white;
 }
 
 main {
@@ -126,7 +129,46 @@ p {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.336);
 }
 
+.bookbtn:hover {
+  background-color: black;
+  color: white;
+  transition-duration: 1.2s;
+}
 a.bookbtn {
   display: inline-block;
   margin-top: 20px;
+}
+
+/* nav a.bookbtn {
+  margin-left: 20px;
+  border-radius: 0px;
+  background-color: black;
+  color: beige;
+} */
+
+.navbutton {
+  border: 1px solid white;
+  padding: 10px 25px;
+  font-family: "Playfair Display", serif;
+  margin-left: 13px;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.tbox {
+  width: 47%;
+  padding: 50px;
+  border: 1px solid white;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.tbox p:last-of-type {
+  font-style: i;
+  /* font-size: 2rem;
+  padding-left: 40px; */
 }
