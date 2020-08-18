@@ -3,13 +3,15 @@ h1 {
   font-family: "Playfair Display", serif;
 }
 
-/* html {
-  height: 100%;
-} */
+html {
+  background-image: linear-gradient(#fc5e55, #fa4083);
+}
 
 /* linear-gradient(#fc5e55, #fa4083); */
 body {
-  background-image: linear-gradient(#fc5e55, #fa4083);
+  background-image: url(./images/image-lion-background.png);
+  background-repeat: no-repeat;
+  background-position: top center;
   font-family: "Playfair Display", serif;
   font-size: 1.125 rem;
   color: white;
@@ -150,7 +152,9 @@ a.bookbtn {
   border: 1px solid white;
   padding: 10px 25px;
   font-family: "Playfair Display", serif;
-  margin-left: 13px;
+  /* margin-left: 13px; */
+  display: inline-block;
+  position: relative;
 }
 
 .testimonials {
@@ -172,3 +176,24 @@ a.bookbtn {
   /* font-size: 2rem;
   padding-left: 40px; */
 }
+
+.dropdown {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.navbutton:hover .dropdown {
+  display: block;
+}
+
+.navbutton .dropdown {
+  width: 120px;
+  background-color: rgba(0, 0, 0, 0.863);
+}
+
+/* .navbutton .dropdown a {
+  color: blue;
+} */
