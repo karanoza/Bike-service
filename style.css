@@ -88,6 +88,12 @@ main {
   box-sizing: border-box;
 }
 
+.card1:hover,
+.card2:hover,
+.card3:hover {
+  box-shadow: 10px 10px 50px #ffffff;
+}
+
 .herobox1 {
   flex: 2;
   padding-right: 100px;
@@ -192,8 +198,8 @@ a.bookbtn {
 .dropdown {
   display: none;
   position: absolute;
-  z-index: 5;
-  padding-top: 20px;
+  z-index: 10;
+  padding-top: 18px;
   text-align: center;
 }
 
@@ -203,7 +209,7 @@ a.bookbtn {
 
 .navbutton .dropdown {
   width: 120px;
-  background-color: rgba(0, 0, 0, 0.863);
+  background-color: rgba(63, 41, 41, 0.863);
 }
 
 /* .navbutton .dropdown a {
