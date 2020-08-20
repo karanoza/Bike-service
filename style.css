@@ -109,6 +109,13 @@ h2 {
   font-size: 1.75rem;
   font-family: "Playfair Display", serif;
 }
+
+.customer {
+  font-size: 1.75rem;
+  font-family: cursive;
+  text-align: center;
+  margin-top: 100px;
+}
 p {
   line-height: 1.75rem;
   margin-bottom: 0.5rem;
