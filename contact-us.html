@@ -27,15 +27,20 @@
   <body>
     <div class="container">
       <header>
+        <!-- Lion Logo -->
         <div class="logo">
           <a href="index.html"
             ><img src="./images/logo-roar-bikes.png" alt="lion logo"
           /></a>
         </div>
+
+        <!-- Nav bar -->
+
         <nav>
           <div class="navbutton">
             <a href="#">Services</a>
 
+            <!-- dropdown -->
             <div class="dropdown">
               <div class="navbutton">
                 <a href="#">Onsite Service</a>
@@ -59,6 +64,7 @@
         </nav>
       </header>
 
+      <!-- title and description -->
       <div class="main2">
         <h1>
           Contact Us
@@ -68,7 +74,9 @@
           directly. Our team will come back to you within a amtter of hours to
           help you.
         </p>
-        <form action="mail.php" method="post">
+        <!-- contact form -->
+        <form action="mail.js" method="post">
+          <!-- Person name -->
           <div class="inputwrapper">
             <label for="name" class="newline">First name</label>
             <input
@@ -78,7 +86,7 @@
               placeholder="First name"
             />
           </div>
-
+          <!-- person email -->
           <div class="inputwrapper">
             <label for="email" class="newline">E-mail</label>
             <input
@@ -88,7 +96,7 @@
               placeholder="karan@example.com"
             />
           </div>
-
+          <!-- Message -->
           <div class="inputwrapper">
             <textarea
               name="message"
@@ -98,7 +106,7 @@
               placeholder="Let us know what you think"
             ></textarea>
           </div>
-
+          <!-- checkbox -->
           <div class="inputwrapper">
             <input
               type="checkbox"
@@ -110,7 +118,7 @@
 
             <label for="newsletter">Sign Up For The Email Newsletter</label>
           </div>
-
+          <!-- radio button -->
           <div class="inputwrapper">
             <p>How do you like to be contacted</p>
             <input type="radio" name="contact-pref" id="phone" value="Phone" />
@@ -124,7 +132,7 @@
             />
             <label for="email-radio">Email</label>
           </div>
-
+          <!-- dropdown -->
           <div class="inputwrapper">
             <select name="country" id="country">
               <option value="India">India</option>
@@ -137,7 +145,7 @@
               <option value="Srilanka">Srilanka</option>
             </select>
           </div>
-
+          <!-- date time picker -->
           <div class="inputwrapper">
             <input type="date" name="date" id="date" />
           </div>
@@ -145,6 +153,8 @@
           <input type="submit" value="Submit" />
         </form>
       </div>
+
+      <!-- Reviews -->
       <div class="cards">
         <div class="card1">
           <a href="#">
