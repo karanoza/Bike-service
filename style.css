@@ -168,6 +168,7 @@ a.bookbtn {
   margin-bottom: 100px;
 }
 .tbox {
+  background-color: rgba(0, 0, 0, 0.253);
   width: 47%;
   padding: 50px;
   border: 1px solid white;
@@ -232,4 +233,17 @@ input[type="radio"] {
 
 form {
   margin: 40px 0px;
+}
+
+footer {
+  background-color: #fc5d5591;
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  /* height: 100px; */
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.712);
+  /* margin-top: 250px; */
 }
