@@ -4,7 +4,7 @@ h1 {
 }
 
 html {
-  background-image: linear-gradient(#fc5e55, #fa4083);
+  background-image: linear-gradient(#0e0d0d, #3598e9);
 }
 
 /* linear-gradient(#fc5e55, #fa4083); */
@@ -234,6 +234,7 @@ textarea {
 .newline {
   display: block;
   margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .margin-right-a {
@@ -249,7 +250,7 @@ form {
 }
 
 footer {
-  background-color: #fc5d5591;
+  background-color: #02183191;
   color: rgb(255, 255, 255);
   font-size: 1.3rem;
   /* height: 100px; */
