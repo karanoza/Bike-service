@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 h1 {
   font-size: 70px;
   font-family: "Playfair Display", serif;
@@ -22,27 +26,32 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 1024px;
-
-  min-height: 300px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
 
 header {
-  min-height: 100px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid white;
 }
 
+.logo{
+  margin-bottom: 20px;
+}
+
+
 main {
-  min-height: 300px;
+  width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .main2 {
@@ -50,43 +59,49 @@ main {
 }
 
 .cards {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   text-align: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 100%;
+  min-height: 250px;
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.658);
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 10px;
 }
 
 .card1 {
   background-image: url(images/image-background-card1.jpg);
   background-size: cover;
   background-position: bottom;
-  min-height: 250px;
-  width: 30%;
-  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.658);
+
 }
 .card2 {
   background-image: url(images/image-background-card2.jpg);
   background-size: cover;
   background-position: bottom;
-  min-height: 250px;
-  width: 30%;
-  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.658);
 }
 
 .card3 {
   background-image: url(images/image-background-card3.jpg);
   background-size: cover;
   background-position: bottom;
-  min-height: 250px;
-  width: 30%;
-  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.658);
 }
 
-.card1,
-.card2,
-.card3 {
-  padding: 30px 30px 20px 30px;
-  box-sizing: border-box;
-}
 
 .card1:hover,
 .card2:hover,
@@ -94,18 +109,43 @@ main {
   box-shadow: 10px 10px 50px #ffffff;
 }
 
-.herobox1 {
-  flex: 2;
-  padding-right: 100px;
+.cards p {
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  margin-top: 10px;
 }
 
+.cards i {
+  font-size: 36px;
+}
+
+.herobox1 {
+  display: flex;
+  justify-content: center;
+  padding: 15px 10px;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+
+
 .herobox2 {
-  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  
+}
+
+.herobox2 img {
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.658);
 }
 
-h1 {
-  font-size: 3.25rem;
+.herobox1 h1 {
+  font-size: 2rem;
   font-family: "Playfair Display", serif;
   margin-bottom: 1rem;
   text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.541);
@@ -127,17 +167,6 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.cards p {
-  font-size: 0.85rem;
-  line-height: 1.2rem;
-  margin-top: 10px;
-}
-
-.cards i {
-  font-size: 100px;
-
-  padding-top: 20px;
-}
 
 .bookbtn {
   background-color: white;
@@ -179,10 +208,11 @@ a.bookbtn {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 100px;
+  padding: 20px;
 }
 .tbox {
   background-color: rgba(0, 0, 0, 0.253);
-  width: 47%;
+  width: 100%;
   padding: 50px;
   border: 1px solid white;
   box-sizing: border-box;
@@ -260,4 +290,50 @@ footer {
   margin-bottom: 50px;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.712);
   /* margin-top: 250px; */
+}
+
+
+/*Responsive */
+@media (min-width: 768px) { 
+  header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px 20px;
+  }
+
+
+  main{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+  }
+  main .herobox1 {
+    flex: 2;
+    margin-bottom: 0;
+  }
+  main .herobox2{
+    flex: 1;
+    margin: 0;
+  }
+  .herobox1 h1{
+    font-size: 3.25rem;
+  }
+  .card{
+    width: 30%;
+  }
+
+  .testimonials {
+    justify-content: space-around;
+  }
+
+  .tbox {
+    width: 47%;
+    height: 300px;
+ }
+
+ .container{
+   width: 1024px;
+ }
+
 }
