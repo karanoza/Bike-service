@@ -1,218 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA_Compatible" content="ie=edge" />
+    <title>Contact us details</title>
+    <meta
+      name="description"
+      content="Contact details for roar - 57, abbey strret, dublin, w23c1k2, phone +91 41324123 "
+    />
+    <!-- eric mayers css reset -->
+    <link rel="stylesheet" href="./styles/css-reset.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA_Compatible" content="ie=edge" />
-  <title>Contact us details</title>
-  <meta name="description"
-    content="Contact details for roar - 57, abbey strret, dublin, w23c1k2, phone +91 41324123 " />
-  <!-- eric mayers css reset -->
-  <link rel="stylesheet" href="./styles/css-reset.css" />
+    <!-- my style sheet -->
+    <link rel="stylesheet" href="./styles/style.css" />
 
-  <!-- my style sheet -->
-  <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/892ac4a66a.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/892ac4a66a.js" crossorigin="anonymous" defer></script>
-</head>
-
-<body>
-  <header>
-    <div class="container header-section">
-      <!-- Lion Logo -->
-      <div class="logo">
-        <a href="index.html"><img class="logo-img" src="./assets/images/logo-roar-bikes.png" alt="lion logo" /></a>
+  <body>
+    <header>
+      <div class="container header-section">
+        <!-- Lion Logo -->
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              class="logo-img"
+              src="./assets/images/logo-roar-bikes.png"
+              alt="lion logo"
+          /></a>
+        </div>
+        <!-- Nav bar -->
+        <nav>
+          <div class="navbutton">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="navbutton">
+            <a href="#">Services</a>
+            <!-- dropdown -->
+            <div class="dropdown">
+              <div class="navbutton">
+                <a href="#">Onsite Service</a>
+              </div>
+              <div class="navbutton">
+                <a href="#">Parts Delievery</a>
+              </div>
+              <div class="navbutton">
+                <a href="#">Request callback</a>
+              </div>
+            </div>
+          </div>
+          <div class="navbutton">
+            <a href="#">About</a>
+          </div>
+          <div class="navbutton">
+            <a href="contact-us.html">Contact</a>
+          </div>
+        </nav>
       </div>
-      <!-- Nav bar -->
-      <nav>
-        <div class="navbutton">
-          <a href="#">Services</a>
+    </header>
+    <div class="container">
+      <!-- title and description -->
+      <div class="main2">
+        <h1>Contact Us</h1>
+        <p>
+          Do you hava eany question? Please do not hesitate to contact us
+          directly. Our team will come back to you within a amtter of hours to
+          help you.
+        </p>
+        <!-- contact form -->
+        <form action="mail.js" method="post">
+          <!-- Person name -->
+          <div class="inputwrapper">
+            <label for="name" class="newline">First name</label>
+            <input
+              type="text"
+              name="Address"
+              id="name"
+              placeholder="First name"
+            />
+          </div>
+          <!-- person email -->
+          <div class="inputwrapper">
+            <label for="email" class="newline">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="karan@example.com"
+            />
+          </div>
+          <!-- Message -->
+          <div class="inputwrapper">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Let us know what you think"
+            ></textarea>
+          </div>
+          <!-- checkbox -->
+          <div class="inputwrapper">
+            <input
+              type="checkbox"
+              name="newsletter"
+              id="newsletter"
+              value="newsletter sign up"
+              checked
+            />
+
+            <label for="newsletter">Sign Up For The Email Newsletter</label>
+          </div>
+          <!-- radio button -->
+          <div class="inputwrapper">
+            <p>How do you like to be contacted</p>
+            <input type="radio" name="contact-pref" id="phone" value="Phone" />
+            <label for="phone" class=".margin-right-a">Phone</label>
+
+            <input
+              type="radio"
+              name="contact-pref"
+              id="email-radio"
+              value="Email"
+            />
+            <label for="email-radio">Email</label>
+          </div>
           <!-- dropdown -->
-          <div class="dropdown">
-            <div class="navbutton">
-              <a href="#">Onsite Service</a>
+          <div class="flex-col-wrap">
+            <div class="inputwrapper">
+              <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Germany">Germany</option>
+                <option value="Canada">Canada</option>
+                <option value="New Zeland">New Zeland</option>
+                <option value="Australia">Australia</option>
+                <option value="Srilanka">Srilanka</option>
+              </select>
             </div>
-            <div class="navbutton">
-              <a href="#">Parts Delievery</a>
-            </div>
-            <div class="navbutton">
-              <a href="#">Request callback</a>
+            <!-- date time picker -->
+            <div class="inputwrapper">
+              <input type="date" name="date" id="date" />
             </div>
           </div>
+
+          <input class="btn btn-submit" type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <!-- Reviews -->
+      <div class="cards">
+        <div class="sec2-card card1">
+          <a href="#">
+            <i class="fas fa-motorcycle"></i>
+            <h2>Book Online</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, ea
+              maxime iure laborum harum dolorum?
+            </p>
+          </a>
         </div>
-        <div class="navbutton">
-          <a href="#">About</a>
+
+        <div class="sec2-card card2">
+          <a href="#">
+            <i class="fas fa-cogs"></i>
+            <h2>Service Types</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, ea
+              maxime iure laborum harum dolorum?
+            </p>
+          </a>
         </div>
-        <div class="navbutton">
-          <a href="contact-us.html">Contact</a>
+
+        <div class="sec2-card card3">
+          <a href="#">
+            <i class="fas fa-phone-alt"></i>
+            <h2>Call For Advice</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, ea
+              maxime iure laborum harum dolorum?
+            </p>
+          </a>
         </div>
-      </nav>
+      </div>
+
+      <div class="testimonials">
+        <div class="tbox">
+          <p>
+            "I would like to personally thank you for your outstanding product.
+            You guys rock! It's all good. I can't say enough about Roar Cycles."
+          </p>
+          <p>- Tammara I.</p>
+        </div>
+
+        <div class="tbox">
+          <p>
+            "Roar Cycles is the most valuable business resource we have EVER
+            purchased. I will let my mum know about this, she could really make
+            use of Roar Cycles! Roar Cycles has completely surpassed our
+            expectations."
+          </p>
+          <p>- Floris V.</p>
+        </div>
+
+        <div class="tbox">
+          <p>
+            "I'm good to go. Roar Cycles is both attractive and highly
+            adaptable. I will refer everyone I know."
+          </p>
+          <p>- Carlin B.</p>
+        </div>
+
+        <div class="tbox">
+          <p>
+            "Roar Cycles impressed me on multiple levels. I would gladly pay
+            over 600 dollars for Roar Cycles. We can't understand how we've been
+            living without Roar Cycles."
+          </p>
+          <p>- Eve V.</p>
+        </div>
+
+        <div class="tbox">
+          <p>
+            "I don't know what else to say. Absolutely wonderful! You've saved
+            our business! After using Roar Cycles my business skyrocketed!"
+          </p>
+          <p>- Brier Q.</p>
+        </div>
+
+        <div class="tbox">
+          <p>"Roar Cycles should be nominated for service of the year."</p>
+          <p>- Elfrieda U.</p>
+        </div>
+      </div>
     </div>
-  </header>
-  <div class="container">
-    <!-- title and description -->
-    <div class="main2">
-      <h1>
-        Contact Us
-      </h1>
+    <!-- footer -->
+    <footer>
       <p>
-        Do you hava eany question? Please do not hesitate to contact us
-        directly. Our team will come back to you within a amtter of hours to
-        help you.
+        1, Danny's street, Cover enclave, Near Galaxy art gallery Copyright
+        2020©
       </p>
-      <!-- contact form -->
-      <form action="mail.js" method="post">
-        <!-- Person name -->
-        <div class="inputwrapper">
-          <label for="name" class="newline">First name</label>
-          <input type="text" name="Address" id="name" placeholder="First name" />
-        </div>
-        <!-- person email -->
-        <div class="inputwrapper">
-          <label for="email" class="newline">E-mail</label>
-          <input type="email" name="email" id="email" placeholder="karan@example.com" />
-        </div>
-        <!-- Message -->
-        <div class="inputwrapper">
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Let us know what you think"></textarea>
-        </div>
-        <!-- checkbox -->
-        <div class="inputwrapper">
-          <input type="checkbox" name="newsletter" id="newsletter" value="newsletter sign up" checked />
-
-          <label for="newsletter">Sign Up For The Email Newsletter</label>
-        </div>
-        <!-- radio button -->
-        <div class="inputwrapper">
-          <p>How do you like to be contacted</p>
-          <input type="radio" name="contact-pref" id="phone" value="Phone" />
-          <label for="phone" class=".margin-right-a">Phone</label>
-
-          <input type="radio" name="contact-pref" id="email-radio" value="Email" />
-          <label for="email-radio">Email</label>
-        </div>
-        <!-- dropdown -->
-        <div class="flex-col-wrap">
-          <div class="inputwrapper">
-            <select name="country" id="country">
-              <option value="India">India</option>
-              <option value="USA">USA</option>
-              <option value="UK">UK</option>
-              <option value="Germany">Germany</option>
-              <option value="Canada">Canada</option>
-              <option value="New Zeland">New Zeland</option>
-              <option value="Australia">Australia</option>
-              <option value="Srilanka">Srilanka</option>
-            </select>
-          </div>
-          <!-- date time picker -->
-          <div class="inputwrapper">
-            <input type="date" name="date" id="date" />
-          </div>
-        </div>
-
-        <input class="btn btn-submit" type="submit" value="Submit" />
-      </form>
-    </div>
-
-    <!-- Reviews -->
-    <div class="cards">
-      <div class="sec2-card card1">
-        <a href="#">
-          <i class="fas fa-motorcycle"></i>
-          <h2>Book Online</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, ea
-            maxime iure laborum harum dolorum?
-          </p>
-        </a>
-      </div>
-
-      <div class="sec2-card card2">
-        <a href="#">
-          <i class="fas fa-cogs"></i>
-          <h2>Service Types</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, ea
-            maxime iure laborum harum dolorum?
-          </p>
-        </a>
-      </div>
-
-      <div class="sec2-card card3">
-        <a href="#">
-          <i class="fas fa-phone-alt"></i>
-          <h2>Call For Advice</h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, ea
-            maxime iure laborum harum dolorum?
-          </p>
-        </a>
-      </div>
-    </div>
-
-    <div class="testimonials">
-      <div class="tbox">
-        <p>
-          "I would like to personally thank you for your outstanding product.
-          You guys rock! It's all good. I can't say enough about Roar Cycles."
-        </p>
-        <p>- Tammara I.</p>
-      </div>
-
-      <div class="tbox">
-        <p>
-          "Roar Cycles is the most valuable business resource we have EVER
-          purchased. I will let my mum know about this, she could really make
-          use of Roar Cycles! Roar Cycles has completely surpassed our
-          expectations."
-        </p>
-        <p>- Floris V.</p>
-      </div>
-
-      <div class="tbox">
-        <p>
-          "I'm good to go. Roar Cycles is both attractive and highly
-          adaptable. I will refer everyone I know."
-        </p>
-        <p>- Carlin B.</p>
-      </div>
-
-      <div class="tbox">
-        <p>
-          "Roar Cycles impressed me on multiple levels. I would gladly pay
-          over 600 dollars for Roar Cycles. We can't understand how we've been
-          living without Roar Cycles."
-        </p>
-        <p>- Eve V.</p>
-      </div>
-
-      <div class="tbox">
-        <p>
-          "I don't know what else to say. Absolutely wonderful! You've saved
-          our business! After using Roar Cycles my business skyrocketed!"
-        </p>
-        <p>- Brier Q.</p>
-      </div>
-
-      <div class="tbox">
-        <p>
-          "Roar Cycles should be nominated for service of the year."
-        </p>
-        <p>- Elfrieda U.</p>
-      </div>
-    </div>
-
-  </div>
-  <!-- footer -->
-  <footer>
-    <p>
-      1, Danny's street, Cover enclave, Near Galaxy art gallery Copyright
-      2020©
-    </p>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
